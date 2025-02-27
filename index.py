@@ -1,0 +1,1 @@
+print('create index in main')
