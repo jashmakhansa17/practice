@@ -1,1 +1,4 @@
-print('create index in main')
+t = ['Arman', 'Lucky', 'Dhairya']
+s = '-'.join(t)
+print(s)
+print(type(s))
