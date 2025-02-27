@@ -1,0 +1,48 @@
+git branch __	-create new branch
+
+git checkout __	-switch on other branch
+
+git merge bug	-here * is on main
+
+git rebase main	-* is on bug	// just like merge, bug will go under main
+
+Moving upwards one commit at a time with = ^	it moves HEAD
+Moving upwards a number of times with = ~<num>
+	
+git checkout HEAD~4
+
+git branch -f main HEAD~3	// directly reassign a branch to a commit
+moves (by force) the main branch to three parents behind HEAD.
+Note: In a real git environment git branch -f command is not allowed for your current branch.
+
+git reset HEAD~1
+
+git revert HEAD
+
+git cherry-pick c2 c4
+- something like revert, and rebase
+- * is on main, after this commit c2 and c4 will be rebase as c2' and c4' under main, in sequence
+
+git rebase -i HEAD~4
+// use to rebase commits by ui
+
+git commit --amend
+
+git tag v1 c1
+// on c1 marked as v1
+
+git describe <ref>
+// here <ref> is anything git can resolve into a commit. If you don't specify a ref, git just uses where you're checked out right now (HEAD).
+
+<tag>_<numCommits>_g<hash>
+// Where tag is the closest ancestor tag in history, numCommits is how many commits away that tag is, and <hash> is the hash of the commit being described.
+
+git fakeTeamwork foo 3
+
+git pull --rebase 
+//  it is shorthand for a fetch and a rebase!
+
+git checkout -b totallyNotMain o/main
+// Creates a new branch named totallyNotMain and sets it to track o/main.
+
+git branch -u o/main foo
