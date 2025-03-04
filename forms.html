@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+
+        label{
+            color: brown;
+            font-weight: bold;
+            text-shadow:5px 5px 5px yellow;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px 30px;
+            margin: 8px 0px;
+            box-sizing: border-box;
+            background-color: azure;
+        }
+
+        input[type='password']{
+            background-color: red;
+        }
+
+        input[type='submit']{
+            width: 20%;
+            padding: 10px;
+            border-radius: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last name</label>
+        <input type="text" id="lname" name="lname">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <label for="submit">Submit</label>
+        <input type="submit" id="submit" name="submit">
+        
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>basic property</title>
+    <style>
+      .size_div {
+        width: 500px;
+        height: 500px;
+        background-image: url("chairs.avif");
+        background-size: 100px;
+        background-repeat: no-repeat;
+        background-position: right center;
+      }
+
+      .size_p {
+        width: 50%;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- color property -->
+    <h1>color property</h1>
+
+    <!-- name color -->
+    <p style="background-color: red">background-color</p>
+    <!-- RGB (Red,Green, Blue), Range : 0 to 255-->
+    <p style="background-color: rgb(55, 155, 255)">background-color</p>
+    <!-- HexCode -->
+    <p style="background-color: #afafee">background-color</p>
+
+    <!-- Height and Width -->
+    <h1>Height and Width</h1>
+
+    <!-- 
+    auto - This is default. The browser calculates the height and width
+    length - Defines the height/width in px, cm, etc. 
+    % - Defines the height/width in percent of the containing block 
+    initial - Sets the height/width to its default value 
+    inherit - The height/width will be inherited from its parent value 
+    -->
+    <div class="size_div">
+      <p class="size_p">Height and Width with auto</p>
+    </div>
+
+    <!-- CSS background properties -->
+    <h1>CSS background properties</h1>
+
+    <!-- 
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position
+    -->
+  </body>
+</html>
