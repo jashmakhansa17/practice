@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>color</title>
+    <style>
+      .p1 {
+        height: 100px;
+        width: 100px;
+        background: linear-gradient(
+          50deg,
+          rgba(143, 64, 64, 0.9),
+          yellow,
+          green,
+          blue
+        );
+      }
+
+      .p2 {
+        height: 100px;
+        width: 100px;
+        background: repeating-linear-gradient(red, green 20%, blue 30%);
+      }
+
+      .p3 {
+        height: 150px;
+        width: 200px;
+        background: radial-gradient(circle, red 20%, blue 60%, green 20%);
+      }
+
+      .p4 {
+        height: 200px;
+        width: 300px;
+        background: repeating-radial-gradient(red, yellow 10%, blue 80%);
+      }
+    </style>
+  </head>
+  <body>
+    <p style="background-color: rgba(73, 73, 182, 0.5)">
+      RGBA(red, green, blue, alpha) Colors
+    </p>
+    <p style="background-color: hsl(200, 80%, 50%, 0.5)">
+      HSL(Hue, Saturation, Lightness, alpha) Colors
+    </p>
+
+    <p class="p1">linear gradiant</p>
+    <p class="p2">repeating linear gradiant</p>
+    <p class="p3">radial gradiant</p>
+    <p class="p4">radial repeating gradiant</p>
+  </body>
+</html>

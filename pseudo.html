@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo elements</title>
+    <style>
+      .p1::first-line {
+        color: red;
+      }
+
+      .p2::first-letter {
+        font-size: 50px;
+        border: 1px solid blue;
+        line-height: 100px;
+      }
+
+      .p2::first-line {
+        color: blue;
+      }
+
+      .p3::before {
+        content: "Content before";
+      }
+
+      .p4::after {
+        content: "Content after";
+      }
+
+      ::marker {
+        color: brown;
+        font-size: 20px;
+      }
+
+      ::selection {
+        color: red;
+        background-color: yellow;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- 
+    syntax:
+    selector::pseudo-element {
+    property: value;
+    }
+    -->
+
+    <h1>The ::first-line Pseudo-element</h1>
+    <p class="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptate
+      dolorem non ab officiis dolore quo sapiente harum odit maxime accusantium,
+      ad cupiditate at deleniti optio, eius doloribus ullam velit.
+    </p>
+
+    <h1>The ::first-letter Pseudo-element</h1>
+    <p class="p2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero beatae
+      veritatis reiciendis, distinctio voluptatibus et incidunt sed obcaecati
+      perferendis natus, autem omnis inventore non quis ipsum cum. Quibusdam,
+      nemo nobis.
+    </p>
+
+    <h1>The ::before Pseudo-element</h1>
+    <p class="p3">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis illo
+      soluta optio iure alias accusamus architecto tenetur corporis dolore a
+      dolores fugiat nihil libero odit adipisci asperiores, magnam, provident
+      quibusdam.
+    </p>
+
+    <h1>The ::after Pseudo-element</h1>
+    <p class="p4">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam deserunt
+      facilis illo temporibus doloribus. Consectetur, numquam. Iusto repudiandae
+      quod perspiciatis, recusandae laudantium ex expedita culpa corrupti totam,
+      mollitia praesentium eius.
+    </p>
+  </body>
+
+  <h1>The ::marker Pseudo-element</h1>
+  <div>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ol>
+  </div>
+
+  <h1>The ::selection Pseudo-element</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet
+    consequuntur doloremque velit aperiam iure pariatur ipsa delectus nam
+    accusantium fugit libero expedita. Sequi dolore deleniti iste cum amet
+    labore.
+  </p>
+
+  
+</html>

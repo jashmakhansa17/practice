@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image</title>
+    <style>
+      .p1 {
+        border: 20px solid red;
+        padding: 25px;
+        background: url(chairs.avif);
+        background-size: contain;
+        height: 250px;
+        width: 500px;
+        color: rgb(0, 12, 22);
+        background-repeat: no-repeat;
+        text-align: center;
+      }
+
+      .p2 {
+        border: 20px solid red;
+        padding: 25px;
+        background: url(chairs.avif);
+        background-size: cover;
+        height: 250px;
+        width: 500px;
+        color: rgb(0, 12, 22);
+        background-repeat: no-repeat;
+        text-align: center;
+      }
+
+      .p3{
+        background: url(chairs.avif);
+        border: 20px solid red;
+        height: 250px;
+        width: 500px;
+        padding: 25px;
+        background-origin: border-box;
+        background-size: 200px 200px;
+        background-repeat: no-repeat;
+        text-align: right;
+      }
+
+      .p4{
+        background: url(chairs.avif);
+        border: 20px solid red;
+        height: 250px;
+        width: 500px;
+        padding: 25px;
+        background-origin: padding-box;
+        background-size: 200px 200px;
+        background-repeat: no-repeat;
+        text-align: right;
+      }
+
+      .p5{
+        background: url(chairs.avif);
+        border: 20px solid red;
+        height: 250px;
+        width: 500px;
+        padding: 25px;
+        background-origin: content-box;
+        background-size: 200px 200px;
+        background-repeat: no-repeat;
+        text-align: right;
+      }
+
+      .p6{
+        background: url(chairs.avif);
+        border: 20px solid red;
+        height: 250px;
+        width: 500px;
+        padding: 25px;
+        background-clip: border-box;
+        background-size: 200px 200px;
+        background-repeat: no-repeat;
+        text-align: right;
+      }
+
+      .p7{
+        background: url(chairs.avif);
+        border: 20px solid red;
+        height: 250px;
+        width: 500px;
+        padding: 25px;
+        background-clip: padding-box;
+        background-size: 200px 200px;
+        background-repeat: no-repeat;
+        text-align: right;
+      }
+
+      .p8{
+        background: url(chairs.avif);
+        border: 20px solid red;
+        height: 250px;
+        width: 500px;
+        padding: 25px;
+        background-clip: content-box;
+        background-size: 200px 200px;
+        background-repeat: no-repeat;
+        text-align: right;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>background size</h1>
+    <p class="p1">background-size: contain;</p>
+    <p class="p2">background-size: cover;</p>
+
+    <h1>background origin</h1>
+    <p class="p3">background-origin: border-box</p>
+    <p class="p4">background-origin: padding-box</p>
+    <p class="p5">background-origin: content-box</p>
+
+    <h1>background clip</h1>
+    <p class="p6">background-clip: border-box</p>
+    <p class="p7">background-clip: padding-box</p>
+    <p class="p8">background-clip: content-box</p>
+  </body>
+</html>

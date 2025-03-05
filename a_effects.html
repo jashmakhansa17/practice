@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>effects</title>
+    <style>
+      .p1 {
+        text-shadow: 2px 2px 2px red, 4px 4px 2px blue;
+        font-size: 25px;
+      }
+      .p2 {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(54, 196, 172);
+        box-shadow: 5px 5px 3px red;
+      }
+
+      .p3 {
+        white-space: nowrap;
+        width: 200px;
+        border: 1px solid black;
+        overflow: hidden;
+        text-overflow: clip;
+      }
+
+      .p4 {
+        white-space: nowrap;
+        width: 200px;
+        border: 1px solid black;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .p3:hover {
+        overflow: visible;
+      }
+
+      .p4:hover {
+        overflow: visible;
+      }
+
+      .ww1{
+        border: 1px solid black;
+        width: 200px;
+        word-wrap: normal;
+      }
+
+      .ww2{
+        border: 1px solid black;
+        width: 200px;
+        word-wrap: break-word;
+      }
+
+      .wb1{
+        width: 200px;
+        border: 1px solid black;
+        word-break: normal;
+      }
+
+      .wb2{
+        width: 200px;
+        border: 1px solid black;
+        word-break: break-all;
+      }
+
+      .wb3{
+        width: 200px;
+        border: 1px solid black;
+        word-break: keep-all;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text shadow</h1>
+    <p class="p1">hello world</p>
+
+    <h1>Box shadow</h1>
+    <p class="p2">hello world</p>
+
+    <h1>Text effecct</h1>
+    <p class="p3">
+      text-overflow: clip :- Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Quasi animi ipsa voluptatibus cupiditate qui asperiores laudantium
+      eveniet vitae ipsum. Itaque expedita soluta aut placeat culpa. Est dicta
+      quis mollitia nulla.
+    </p>
+
+    <p class="p4">
+      text-overflow: clip :- Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Quasi animi ipsa voluptatibus cupiditate qui asperiores laudantium
+      eveniet vitae ipsum. Itaque expedita soluta aut placeat culpa. Est dicta
+      quis mollitia nulla.
+    </p>
+
+    <h1>word wrap</h1>
+    <p class="ww1">
+      Lorem ipsum dolor sit amet consectetuddddddddddddddddddcccccccr, adipisicing elit.
+    </p>
+
+    <p class="ww2">
+      Lorem ipsum dolor sit amet consectetuddddddddddddddddddcccccccr, adipisicing elit.
+    </p>
+
+    <h1>word break</h1>
+    <p class="wb1">
+        HelloHelloHelloHelloHelloHello Div Tag...
+    </p>
+    <p class="wb2">
+        HelloHelloHelloHelloHelloHello Div Tag...
+    </p>
+    <p class="wb3">
+        HelloHelloHelloHelloHelloHello Div Tag...This text will-break-at-hyphens.
+    </p>
+  </body>
+</html>

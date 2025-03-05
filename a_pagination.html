@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pagination</title>
+    <style>
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 10px;
+        text-decoration: underline;
+        border: 1px solid #ddd;
+      }
+      .pagination a.active {
+        background-color: blueviolet;
+        color: white;
+        border: 1px solid blueviolet;
+      }
+      .pagination a:hover:not(.active) {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="http://www.google.com">1</a>
+      <a href="#" class="active">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">&raquo;</a>
+    </div>
+  </body>
+</html>

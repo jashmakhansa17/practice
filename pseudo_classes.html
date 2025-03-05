@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .p5:active {
+        color: red;
+        background-color: yellow;
+      }
+
+      input:checked {
+        height: 20px;
+        width: 20px;
+      }
+
+      input[type="text"]:enabled {
+        background: blue;
+      }
+      input[type="text"]:disabled {
+        background: red;
+      }
+
+      p:empty {
+        width: 100px;
+        height: 20px;
+        background: #ff0000;
+      }
+
+      /* p:first-child {
+        background-color: rgb(95, 151, 204);
+      } */
+
+      /* p:first-of-type {
+        background: red;
+      } */
+
+      /* input:focus {
+        background-color: red;
+      } */
+
+      input:in-range {
+        border: 2px solid green;
+      }
+
+      input:invalid {
+        border: 2px solid red;
+      }
+
+      /* p:last-child {
+        background-color: aqua;
+      } */
+
+      /* :not(p) {
+        color: #ac438f;
+      } */
+
+      div div:nth-child(2) {
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div><p>This is some text.</p></div>
+    <div>
+      <div><p>This is some text.</p></div>
+      <div><p>This is some text.</p></div>
+      <div><p>This is some text.</p></div>
+      <div><p>This is some text.</p></div>
+    </div>
+    <div><p>This is some text.</p></div>
+    <div><p>This is some text.</p></div>
+
+    <h1>:active selector</h1>
+    <p class="p5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nam sit
+      harum exercitationem temporibus, quia autem nobis consequatur, provident
+      vel accusamus veniam dolore unde odio cum. Esse harum mollitia ducimus.
+    </p>
+
+    <h1>checked selector</h1>
+    <form>
+      <input type="radio" checked value="male" name="gender" /> Male
+      <input type="radio" value="female" name="gender" /> Female<br />
+      <input type="checkbox" checked /> Reading
+      <input type="checkbox" /> Dancing
+    </form>
+
+    <h1>enable disabled</h1>
+    <form>
+      First name: <input type="text" value="Test1" /><br />
+      Last name: <input type="text" value="Test2" /><br />
+      Country: <input type="text" disabled value="India" />
+    </form>
+
+    <h1>empty selector</h1>
+    <p></p>
+    <p>this is p</p>
+
+    <h1>first-child Selector</h1>
+    <p>This paragraph is the first child of its parent (body).</p>
+    <p>This paragraph is not the first child of its parent (body).</p>
+    <div>
+      <p>This paragraph is the first child of its parent (div).</p>
+      <p>This paragraph is not the first child of its parent (div).</p>
+    </div>
+    <div>
+      <p>This paragraph is the first child of its parent (div).</p>
+      <p>This paragraph is not the first child of its parent (div).</p>
+    </div>
+
+    <form>
+      First name: <input type="password" name="firstname" /><br />
+      Last name: <input type="text" name="lastname" /> Number:
+      <input type="number" min="5" max="10" name="'number" />
+    </form>
+  </body>
+</html>

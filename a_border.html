@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border</title>
+    <style>
+      .p1 {
+        border: 10px solid rgb(20, 40, 65);
+        border-radius: 30px;
+        background-color: rgb(88, 88, 218);
+        height: 100px;
+        padding: 30px;
+        width: 100px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .p2 {
+        border: 10px solid rgb(20, 40, 65);
+        border-radius: 20px 50px;
+        background-color: rgb(88, 88, 218);
+        height: 100px;
+        padding: 30px;
+        width: 100px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .p3 {
+        border: 10px solid rgb(20, 40, 65);
+        border-radius: 10px 30px 100px;
+        background-color: rgb(88, 88, 218);
+        height: 100px;
+        padding: 30px;
+        width: 100px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .p4 {
+        border: 50px solid red;
+        padding: 15px;
+        border-image-source: url(chairs.avif);
+        border-image-slice: 40%;
+        border-image-repeat: repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="p1">this is border 30px</p>
+    <p class="p2">this is border 20px 50px</p>
+    <p class="p3">this is border 10px 30px 100px</p>
+
+    <h1>this is border-image</h1>
+    <p class="p4">border image</p>
+  </body>
+</html>
